@@ -1,0 +1,22 @@
+﻿{
+  "name": "VLC Remote",
+  "description": "Transform your Firefox OS phone into a remote control for the VLC Media player located on your PC",
+  "type": "certified",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "Ahmed Nefzaoui",
+    "url": "http://www.facebook.com/anefzaoui1"
+  },
+  "permissions": {
+    "settings":{}
+  },
+ 
+  "default_locale": "en-US",
+  "icons": {
+    "256": "/style/icons/vlc_256.png",
+    "128": "/style/icons/vlc_128.png",
+    "64": "/style/icons/vlc_64.png",
+    "60": "/style/icons/vlc_60.png"
+  },
+  "orientation": "portrait-primary"
+}

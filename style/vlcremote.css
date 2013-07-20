@@ -1,0 +1,93 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      font-size: 10px;
+      height: 100%;
+      overflow-x: hidden;
+
+}
+.native-player{margin-left:auto;margin-right:auto;margin-top:15px;margin-bottom:5px;display:block;width:190px;height:48px;background-image:url('images/bgnp.png');background-repeat:repeat;}
+.playerbutton{display:inline-block;padding-left:5px;padding-right:5px;padding-top:24px;}
+.prev{width:24px;height:24px;background-image:url('images/video_previous_24.png');background-repeat:no-repeat;background-position:center;cursor:pointer;}
+.play-stop{width:24px;height:24px;background-image:url('images/video_play_24.png');background-repeat:no-repeat;background-position:center;cursor:pointer;}
+.next{width:24px;height:24px;background-image:url('images/video_next_24.png');background-repeat:no-repeat;background-position:center;cursor:pointer;}
+.stop{width:24px;height:24px;background-image:url('images/video_stop_24.png');background-repeat:no-repeat;background-position:center;cursor:pointer;}
+.progress{
+display:block;
+margin-left:auto;
+margin-right:auto;
+margin-top:2px;
+width:calc(100% - 2rem);
+height:10px;
+background-image:url('images/progress.png');
+background-repeat:repeat;
+background-position:center;
+cursor:pointer;
+position:relative;
+}
+.progress-value{
+position:absolute;
+top:0;
+left:0;
+display:block;
+height:10px;
+background-color:white;
+width:28%;
+background-image:url('images/slider.png');
+background-repeat:repeat;
+}
+.now-playing-title{margin-left:auto;margin-right:auto;display:block;width:90%;padding-top:3px;padding-bottom:3px;color:white;  font-size: 10pt; font-family: 'MozTT', sans-serif;}
+.now-playing-timer{margin-left:auto;margin-right:auto;display:block;width:90%;padding-top:3px;padding-bottom:7px;color:white;  font-size: 10pt; font-family: 'MozTT', sans-serif;}
+
+
+.panel{float:right;margin-right:10px;display:block;width:170px;height:30px;background-image:url('images/bgnp.png');background-repeat:repeat;}
+.panel .button{display:inline-block;margin-left:5px;margin-right:5px;padding-top:6px;}
+.panel .fullscreen{width:24px;height:24px;background-image:url('images/display_off_24.png');background-repeat:no-repeat;background-position:center;cursor:pointer;}
+.panel .browsepcmusic{width:24px;height:24px;background-image:url('images/tray_full_24.png');background-repeat:no-repeat;background-position:center;cursor:pointer;}
+.panel .browseconfig{width:24px;height:24px;background-image:url('images/gear_24.png');background-repeat:no-repeat;background-position:center;cursor:pointer;}
+.panel .muteUnmute{width:24px;height:24px;background-image:url('images/sound_24.png');background-repeat:no-repeat;background-position:center;cursor:pointer;}
+
+.volume-container-progress{
+display:block;
+margin-left:auto;
+margin-right:auto;
+margin-top:2px;
+margin-bottom:3px;
+width:90%;
+height:10px;
+background-repeat:repeat;
+background-position:center;
+}
+.volume-indicator{
+display:inline-block;
+height:10px;
+width:50%;
+font-size: 10pt; font-family: 'MozTT', sans-serif;
+color:white;
+margin-left:auto;
+margin-right:auto;
+display:block;
+width:90%;
+padding-top:3px;
+padding-bottom:7px;
+margin-bottom:5px;
+text-align:right;
+}
+.volume-progress-bar{
+display:inline-block;
+float:right;
+width:50%;
+height:10px;
+background-image:url('images/progress.png');
+background-repeat:repeat;
+background-position:center;
+cursor:pointer;
+}
+.volume-progress-value{
+display:block;
+height:10px;
+background-color:white;
+width:50%;
+background-image:url('images/slider.png');
+background-repeat:repeat;
+}
