@@ -4,10 +4,25 @@ state : null,
 position : null,
 curWidth : null,
 ClearState : null,
+thumb : null,
 slave : false,
 remove : function remove(id){
 var elem;
 return (elem=document.getElementById(id)).parentNode.removeChild(elem);
+},
+
+getThumb : function(str){
+str=decodeURIComponent(str);
+/*if(str.length==0){
+document.getElementById("artwork").style.backgroundImage="url('style/images/vlc_256.png')";
+console.log("===== Default BG Loaded");
+}
+else{
+document.getElementById("artwork").style.backgroundImage="url("+str+")";
+console.log("===== Track BG Loaded");
+}
+*/
+document.getElementById("artwork").style.backgroundImage="url('"+str+"')";
 },
 
 updatePosition : function(p){
@@ -44,6 +59,8 @@ else if(vlcremote.state=="stopped") vlcremote.ClearState="Stopped";
 
 if(vlcremote.state=="playing" || vlcremote.state=="paused")
 {
+vlcremote.thumb = obj["information"].category.meta.artwork_url;
+vlcremote.getThumb(vlcremote.thumb);
 document.getElementById("now-playing").innerHTML=vlcremote.ClearState+" : "+obj["information"].category.meta.title;
 document.getElementById("volume").innerHTML="Volume : "+calc.volume(obj["volume"]) + "%";
 document.getElementById("time-info").innerHTML=calc.format_time(obj["time"]) + " / " + calc.format_time(obj["length"]);
