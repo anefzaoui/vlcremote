@@ -8,6 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>VLC Remote</title>
 <script language="JavaScript" src="js/vlcremote.js"></script>
+<script language="JavaScript" src="js/calc.js"></script>
 
 <link rel="resource" type="application/l10n" href="locales/locales.ini" />
 <link type="text/css" rel="stylesheet" href="style/vlcremote.css"/>
@@ -62,39 +63,43 @@
 		<li><a href="#about">About</a></li>
       </ul>
     </nav>
-  </section>
-  <section id="drawer" role="region">
+</section>
+<section id="drawer" role="region">
     <header>
       <a href="#"><span class="icon icon-menu">hide sidebar</span></a>
       <a href="#drawer"><span class="icon icon-menu">show sidebar</span></a>
-      <h1>Inbox</h1>
+      <h1>VLC Remote</h1>
     </header>
-    <div role="main">
-	
-		<div class="native-player"><center>
+<div role="main">
+<div class="artwork"></div>
+<div class="native-player">
+<center>
 <div class="prev playerbutton"></div>
 <div class="play-stop playerbutton"></div>
 <div class="stop playerbutton"></div>
 <div class="next playerbutton"></div>
-</center></div>
-<div class="now-playing-title" id="now-playing">Now Playing : Eminem - Not afraid.mp3</div>
-<div class="progress"><div class="progress-value"></div></div>
-<div class="now-playing-timer">00:01:13 / 00:04:18</div>
+</center>
+</div>
 
-<div class="volume-container-progress"><div class="volume-progress-bar"><div class="volume-progress-value"></div></div></div>
-<div class="volume-indicator">Volume : 100%</div>
+<div class="now-playing-title" id="now-playing">Now Playing : {track name}</div>
+<div class="progress" id="totalporgress"><div id="progress" class="progress-value"></div></div>
+<div class="now-playing-timer" id="time-info">{current} / {total}</div>
 
-<div class="panel"><center>
+<div id="totalvolume" class="volume-container-progress"><div class="volume-progress-bar"><div class="volume-progress-value"></div></div></div>
+<div class="volume-indicator" id="volume">Volume : {volume}</div>
+
+<div class="panel">
+<center>
 <div class="muteUnmute button"></div>
 <div class="browsepcmusic button"></div>
 <div class="fullscreen button"></div>
 <div class="browseconfig button"></div>
-</center></div>
+</center>
+</div>
 
 	
-	</div>
-  </section>
-  
+</div>
+</section>
   
 
 </body>
